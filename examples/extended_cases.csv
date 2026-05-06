@@ -1,0 +1,7 @@
+name,demand,capacity,latency,risk,weight,score,decision,reason
+baseline,65,89,15,12,6,102,review,data engineering baseline scenario exercises the review path for bounded failure handling
+pressure,78,69,26,18,10,41,review,data engineering pressure scenario exercises the review path for bounded failure handling
+surge,102,92,18,14,11,166,review,data engineering surge scenario exercises the review path for bounded failure handling
+degraded,69,62,31,24,5,-51,review,data engineering degraded scenario exercises the review path for bounded failure handling
+recovery,88,109,21,14,12,148,review,data engineering recovery scenario exercises the review path for bounded failure handling
+boundary,72,85,22,18,7,51,review,data engineering boundary scenario exercises the review path for bounded failure handling
