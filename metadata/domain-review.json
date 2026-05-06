@@ -1,0 +1,73 @@
+{
+  "repo": "apex-data-partition-mesh",
+  "language": "C++",
+  "category": "Data engineering",
+  "goal": "Build a C++ toolkit that studies partition behavior through seeded input scenarios, with deterministic summary checks and no network dependency.",
+  "review_model": {
+    "terms": [
+      "schema drift",
+      "lineage depth",
+      "partition skew",
+      "quality gap"
+    ],
+    "lanes": [
+      "ship",
+      "watch",
+      "hold"
+    ],
+    "score": "signal * 2 + slack + confidence - drag * 3",
+    "purpose": "surface the domain-specific cases that need the most careful review"
+  },
+  "cases": [
+    {
+      "name": "baseline",
+      "focus": "schema drift",
+      "signal": 73,
+      "slack": 42,
+      "drag": 8,
+      "confidence": 74,
+      "score": 238,
+      "lane": "ship"
+    },
+    {
+      "name": "stress",
+      "focus": "lineage depth",
+      "signal": 83,
+      "slack": 49,
+      "drag": 17,
+      "confidence": 77,
+      "score": 241,
+      "lane": "ship"
+    },
+    {
+      "name": "edge",
+      "focus": "partition skew",
+      "signal": 81,
+      "slack": 50,
+      "drag": 28,
+      "confidence": 65,
+      "score": 193,
+      "lane": "ship"
+    },
+    {
+      "name": "recovery",
+      "focus": "quality gap",
+      "signal": 68,
+      "slack": 28,
+      "drag": 16,
+      "confidence": 62,
+      "score": 178,
+      "lane": "ship"
+    },
+    {
+      "name": "stale",
+      "focus": "schema drift",
+      "signal": 59,
+      "slack": 46,
+      "drag": 11,
+      "confidence": 61,
+      "score": 192,
+      "lane": "ship"
+    }
+  ]
+}
