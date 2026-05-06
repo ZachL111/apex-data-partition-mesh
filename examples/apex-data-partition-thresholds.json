@@ -1,0 +1,17 @@
+{
+  "repo": "apex-data-partition-mesh",
+  "thresholds": {
+    "signal": 4,
+    "slack": 1,
+    "confidence": 2,
+    "drag": 2,
+    "ship": 197,
+    "watch": 113
+  },
+  "terms": [
+    "schema drift",
+    "lineage depth",
+    "partition skew",
+    "quality gap"
+  ]
+}
